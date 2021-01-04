@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIA - andrea leal</title>
+    <style type="text/css">
+        /*reset*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            font-size: 20px;
+            font-family:'montserrat', sans-serif;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .grid-container{
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            padding: 0 36px;
+            background-image: url(img/Componente%201%20%E2%80%93%201.png);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction:column;
+            justify-content:space-between;
+            align-items:flex-start;
+            width: 100%;
+            height: 562px;
+            background-color: #44EBB9;
+            color: #EB8063;
+        }
+        h1{
+            margin: auto;
+            padding-top: 20px;
+            font-weight: 600px;
+            font-size: 10vw;
+            line-height: 15vw;
+        }
+        h2{
+            font-size: 8vw;
+        }
+        h3{
+            padding-bottom: 10px;
+            font-size: 6vw;
+        }
+        h2, h3{
+            font-weight: 500;
+        }
+      
+        nav{
+         
+            justify-content: center;
+           
+        }
+        nav a{
+           margin: 0 2em;
+        }
+        main{
+            width: 100%;
+            padding: 3em 36px 2em 36px;
+            background-color: #EEEAEA;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            padding: 0.5em;
+            background-color: #44EBB9;
+            font-weight: 900;
+            margin-bottom: 1em;
+        }
+        figure{
+            height: 300px;
+            background: yellow;
+        }
+        figure img{
+            height: 100%;
+            object-fit: cover;
+        }
+        figcaption{
+            display: flex;
+            justify-content: center;
+            height: 60px;
+            align-items: center;
+            text-align: center;
+        }
+        figcaption h4{
+            color:white;
+            font-size: 10px;
+        }
+        /*footer*/
+        footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 100%;
+            padding: 0 36px;
+            height: 350px;
+            background-color: #239E79;
+        }
+        .xxss{
+            display: flex;
+            justify-content:space-between;
+        }
+        footer a{
+            text-decoration: none;
+            color: white;
+            font-weight: 900;
+        }
+        
+        @media only screen and (min-width: 1200px){
+            main{
+                background: pink;
+            }
+            header{
+                height: 75vh;
+                background-image: url(img/Componente%201%20%E2%80%93%201.png);
+                background-position: center;
+                
+            }
+            h1, h2, h3{
+                background: red;
+                width: 70%;
+            
+            }
+            h1{
+                font-size: 5vw;
+            }
+            h1 br{
+                display: none;
+            }
+            h2{
+                text-align: right;
+                font-size: 4vw;
+            }
+            h3{
+                font-size: 3vw;
+                padding-left: 10%;
+            }
+            nav{
+                justify-content: flex-start;
+            }
+            nav a:first-child{
+                margin-left: 15%;
+            }
+            
+            .grid-container{
+                padding: 0.3%;
+                width: 71%;
+                justify-content:flex-start;
+                align-items: center;
+            }
+            section{
+                width:25%;
+                margin: 0 1.5% 1% 0;
+            }
+            footer{
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            .xxss{
+                margin-left: 15%;
+                width: 75%;
+                justify-content: flex-start;
+            }
+            .xxss a{
+                padding-right: 20%;
+            }
+            .email{
+                margin-right: 15%;
+                width: 25%;
+                justify-content: flex-end;
+            }
+        }
+    </style>
+</head>
+
+<body>
+   <div class="grid-container">
+    <header>
+       <h1>Sistemas de <br> Representación <br> Avanzada</h1> 
+       <h2>2 Diseño Gráfico <br> EASDAlcoi</h2>
+       <h3>Andrea Leal</h3>
+    </header>
+    <nav>
+        <a href="#">proyectos</a>
+        <a href="#">contacto</a>
+    </nav>
+    <main>
+        <section>
+          <a href="//">
+           <figure>
+            <img src="img/jpg.PNG" alt="p0_llocweb">
+            </figure>
+            </a>
+            <figcaption>
+            <h4>p0_llocweb</h4>
+            </figcaption>
+        </section>
+         <section>
+           <figure>
+            <img src="img/jpg.PNG" alt="p0_llocweb">
+            </figure>
+            <figcaption>
+            <h4>p0_llocweb</h4>
+            </figcaption>
+        </section>
+         <section>
+           <figure>
+            <img src="img/jpg.PNG" alt="p0_llocweb">
+            </figure>
+            <figcaption>
+            <h4>p0_llocweb</h4>
+            </figcaption>
+        </section>
+    </main>
+    <footer>
+       <div class="xxss">
+        <a href="#">twitter</a>
+        <a href="#">instagram</a>
+        <a href="#">e-mail</a>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
